@@ -8,9 +8,18 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 300vh;
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    animation: bg-fill linear both;
+    animation-timeline: scroll();
+    animation-range: 0vh 30vh;
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -49,6 +58,10 @@ header {
 }
 
 header.open {
+
+    animation: unset;
+    animation-timeline: unset;
+    animation-range: unset;
 
     img:nth-of-type(1) {
         display: none;
@@ -97,4 +110,16 @@ header.open {
             }
         }
     }
+}
+
+
+
+@keyframes bg-fill {
+  to {
+    background: rgb(242, 242, 242);
+    padding-inline: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    top:1rem;
+  }
 }
