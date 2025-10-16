@@ -6,9 +6,14 @@
     padding: 0;
 }
 
+:root {
+    --breakpoint-1: 891px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    overflow-x: hidden;
 }
 
 main {
@@ -23,6 +28,7 @@ h2 {
     text-transform: uppercase;
     color: black;
     font-size: 2.125rem;
+    font-size: clamp(1.4rem, 5vw, 2.125rem);
     font-weight: 400;
 
     margin-left: 0.75rem;
@@ -148,11 +154,11 @@ section.hero {
     background-size: cover;
     color: white;
 
-    @media (width > 768px) {
+    @media (width > 891px) {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, max-content);
-        grid-row-gap: 2rem ;
-        grid-column-gap: 1rem ;
+        grid-row-gap: 2rem;
+        grid-column-gap: 1rem;
     }
 
     h1 {
@@ -162,12 +168,12 @@ section.hero {
         font-weight: 400;
         line-height: 90%;
 
-        @media (width > 768px) {
+        @media (width > 891px) {
             grid-column: 1 / -1;
             grid-row: 1 / 2;
             font-size: 6rem;
             max-width: 50rem;
-    }
+        }
     }
 
     a {
@@ -188,12 +194,17 @@ section.hero {
         color: black;
         border-radius: 70px;
 
-        @media (width > 768px) {
+        @media (width > 891px) {
             grid-column: 3 / 4;
             grid-row: 1 / 2;
             align-self: flex-end;
             margin-block: unset;
-    }
+        }
+
+        @media (width > 1700px) {
+            grid-column: 2 / 3;
+            justify-self: start;
+        }
     }
 
     p:nth-of-type(1) {
@@ -201,10 +212,10 @@ section.hero {
         grid-row: 3 / 4;
         text-align: end;
 
-        @media (width > 768px) {
+        @media (width > 891px) {
             grid-column: 5 / 6;
             grid-row: 2 / 3;
-    }
+        }
     }
 
     p:nth-of-type(2) {
@@ -212,32 +223,32 @@ section.hero {
         grid-row: 4 / 5;
         text-align: end;
 
-        @media (width > 768px) {
+        @media (width > 891px) {
             grid-column: 4 / 5;
             grid-row: 2 / 3;
-    }
+        }
     }
 
     p:nth-of-type(3) {
         grid-column: 1 / 4;
         grid-row: 5 / 6;
 
-        @media (width > 768px) {
+        @media (width > 891px) {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
             text-align: left;
-    }
+        }
     }
 
     p:nth-of-type(4) {
         grid-column: 1 / 4;
         grid-row: 6 / 7;
 
-        @media (width > 768px) {
+        @media (width > 891px) {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             text-align: left;
-    }
+        }
     }
 }
 
@@ -252,13 +263,13 @@ section.tentoonstellingen {
         padding-block: 3rem 1rem;
     }
 
-    > a {
+    >a {
         margin-left: 0.75rem;
     }
 
     >section {
         display: grid;
-        grid-template-columns: 1fr, min-content;
+        grid-template-columns: 1fr min-content;
         grid-template-rows: min-content 1fr 1fr;
 
         margin-inline: 0.5rem;
@@ -273,7 +284,7 @@ section.tentoonstellingen {
         }
 
         h3 {
-            font-size: 2.375rem;
+            font-size: clamp(1.3rem, 10vw, 2.375px);
             font-weight: 200;
             margin-block: 1rem;
             grid-column: span 2;
