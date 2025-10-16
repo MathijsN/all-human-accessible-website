@@ -117,8 +117,9 @@ header.open {
 
 section.hero {
     padding-inline: 0.5rem;
-    padding-top: 6rem;
+    padding-block: 6rem 3rem;
     display: grid;
+    place-content: end;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, min-content);
     height: 100vh;
