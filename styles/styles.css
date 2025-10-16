@@ -15,7 +15,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.51), rgba(255, 0, 0, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 0, 0, 0.089));
     backdrop-filter: blur(4px);
 
     animation: bg-fill linear both;
@@ -200,7 +200,7 @@ section.tentoonstellingen {
 
         margin-inline: 0.5rem;
         padding-bottom: 1rem;
-        background-color: rgba(246, 246, 246, 0.504);
+        background-color: #e6edf27b;
         border-radius: 24px;
 
         img {
