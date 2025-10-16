@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+*:focus {
+    border: 5px solid yellow;
+}
+
 :root {
     --breakpoint-1: 891px;
 }
@@ -345,6 +349,7 @@ section.info {
         }
 
         a {
+
             img {
                 width: 41px;
                 height: 43px;
