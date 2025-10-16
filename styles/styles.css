@@ -123,7 +123,7 @@ section.hero {
     place-content: end;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, min-content);
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.473)), url("../assets/heroimg.webp");
     background-repeat: no-repeat;
