@@ -51,7 +51,7 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: white;
                 }
             }
         }
@@ -85,7 +85,7 @@ header.open {
         background-color: rgb(38, 96, 189);
         position: absolute;
         inset: 0;
-        height: 100svh;
+        height: 100vh;
         padding: 0.5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
