@@ -331,7 +331,7 @@ section.tentoonstellingen {
 }
 
 section.info {
-    padding: 8rem 0.5rem 0 0.5rem;
+    padding: 2rem 0.5rem 0 0.5rem;
 
     @media (width > 678px) {
         display: grid;
@@ -343,6 +343,7 @@ section.info {
     @media (width > 992px) {
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
+        padding-top: 8rem;
     }
 
     >section {
