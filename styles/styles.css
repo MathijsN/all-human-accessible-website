@@ -252,18 +252,17 @@ section.hero {
 }
 
 section.tentoonstelling-info {
-    h2 {
-        padding-block: 3rem 1rem;
-    }
-
-    a {
-        margin-left: 0.75rem;
+     a {
         text-decoration: none;
         color: var(--primary-color);
+        font-size: 1rem;
+        padding-left: 1rem;
+        max-width: max-content;
 
         img {
             width: 12px;
             aspect-ratio: 1 / 1;
+            margin-left: 1rem;
         }
     }
 }
@@ -278,7 +277,7 @@ section.tentoonstellingen {
     gap: 0.5rem;
     scrollbar-color: var(--primary-color);
 
-    padding-top: 2rem;
+    padding-block: 2rem;
 
     @media (any-pointer: course) {
         scrollbar-width: none;
@@ -289,7 +288,7 @@ section.tentoonstellingen {
     }
 
     @media (width > 1321px) {
-            grid-template-columns: repeat(5, 1fr);
+            display: block;
             scrollbar-width: none;
         }
 
@@ -329,11 +328,23 @@ section.tentoonstellingen {
             }
         }
 
+        @media (width > 1321px) {
+            grid-template-rows: max-content min-content min-content min-content;
+
+            &:nth-of-type(n + 2) {
+            display: none;
+        }
+        }
+
         img {
             width: 100%;
             height: 12rem;
             grid-column: span 2;
             object-fit: cover;
+
+            @media (width > 1321px) {
+                height: 100%;
+        }
         }
 
         h3 {
@@ -352,7 +363,7 @@ section.tentoonstellingen {
 
         p:nth-of-type(1) {
             grid-column: span 2;
-            max-width: 12rem;
+            max-width: 18rem;
 
             @media (width > 678px) {
                 max-width: 36rem;
@@ -369,31 +380,19 @@ section.tentoonstellingen {
             align-self: center;
 
             img {
-                width: 41px;
-                height: 43px;
+                width: 16px;
+                height: 14px;
                 margin-right: 1rem;
+                overflow: visible;
             }
 
         }
     }
 
-    >a {
-        text-decoration: none;
-        color: var(--primary-color);
-        font-size: 1rem;
-        padding-inline: 0.5rem;
-        max-width: max-content;
-
-        img {
-            width: 12px;
-            aspect-ratio: 1 / 1;
-            margin-left: 1rem;
-        }
-    }
 }
 
 section.info {
-    padding: 2rem 0.5rem 0 0.5rem;
+    padding: 5rem 0.5rem;
 
     @media (width > 678px) {
         display: grid;
@@ -448,7 +447,7 @@ section.info {
             z-index: 1;
 
             img {
-                width: 41px;
+                width: 43px;
                 height: 43px;
             }
         }
