@@ -270,7 +270,7 @@ section.tentoonstellingen {
         margin-left: 0.75rem;
     }
 
-    >section {
+    > div {
         display: grid;
         grid-template-columns: 1fr min-content;
         grid-template-rows: min-content 1fr 1fr;
@@ -346,7 +346,7 @@ section.info {
         padding-top: 8rem;
     }
 
-    >section {
+    > div {
         position: relative;
         height: max-content;
         display: grid;
