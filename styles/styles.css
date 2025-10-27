@@ -72,10 +72,30 @@ header {
             li {
                 list-style: none;
 
+                .ticketBtn {
+                    padding: 1rem 2rem;
+                    background-color: #002746ae;
+                    border-radius: 32px;
+                    transition: all 0.2s;
+
+                    animation: margin-change linear both;
+                    animation-timeline: scroll();
+                    animation-range: 0vh 30vh;
+
+                    &:hover {
+                        background-color: #002746;
+                    }
+                }
 
                 a {
                     text-decoration: none;
                     color: white;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        font-size: 1.1rem;
+                        transition: all 0.2s;
+                    }
                 }
             }
         }
@@ -252,7 +272,7 @@ section.hero {
 }
 
 section.tentoonstelling-info {
-     a {
+    a {
         text-decoration: none;
         color: var(--primary-color);
         font-size: 1rem;
@@ -288,9 +308,9 @@ section.tentoonstellingen {
     }
 
     @media (width > 1321px) {
-            display: block;
-            scrollbar-width: none;
-        }
+        display: block;
+        scrollbar-width: none;
+    }
 
     >div {
 
@@ -332,8 +352,8 @@ section.tentoonstellingen {
             grid-template-rows: max-content min-content min-content min-content;
 
             &:nth-of-type(n + 2) {
-            display: none;
-        }
+                display: none;
+            }
         }
 
         img {
@@ -344,7 +364,7 @@ section.tentoonstellingen {
 
             @media (width > 1321px) {
                 height: 100%;
-        }
+            }
         }
 
         h3 {
@@ -461,5 +481,11 @@ section.info {
         margin: 1rem 0.5rem;
         border-radius: 2rem;
         top: 0.5rem;
+    }
+}
+
+@keyframes margin-change {
+    to {
+        margin-inline: -0.5rem -1rem;
     }
 }
