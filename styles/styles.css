@@ -33,6 +33,16 @@ h2 {
     margin-left: 0.75rem;
 }
 
+a {
+    transition: all 0.2s;
+
+    &:hover {
+        scale: 1.1;
+        font-size: 1.1rem;
+        transition: all 0.2s;
+    }
+}
+
 header {
     position: fixed;
     left: 0;
@@ -76,7 +86,6 @@ header {
                     padding: 1rem 2rem;
                     background-color: #002746ae;
                     border-radius: 32px;
-                    transition: all 0.2s;
 
                     animation: margin-change linear both;
                     animation-timeline: scroll();
@@ -90,12 +99,6 @@ header {
                 a {
                     text-decoration: none;
                     color: white;
-                    transition: all 0.2s;
-
-                    &:hover {
-                        font-size: 1.1rem;
-                        transition: all 0.2s;
-                    }
                 }
             }
         }
