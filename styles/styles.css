@@ -49,12 +49,13 @@ header {
     right: 0;
     top: 0;
     z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 0, 0, 0.089));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.089));
     backdrop-filter: blur(4px);
 
     animation: bg-fill linear both;
     animation-timeline: scroll();
     animation-range: 0vh 30vh;
+
 
     nav {
         display: flex;
@@ -479,11 +480,11 @@ section.info {
 
 @keyframes bg-fill {
     to {
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(100px);
         padding-inline: 1rem;
-        margin: 1rem 0.5rem;
+        margin: 0.5rem;
         border-radius: 2rem;
-        top: 0.5rem;
+        z-index: 10;
     }
 }
 
