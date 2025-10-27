@@ -14,13 +14,32 @@
 
 <body>
     <header>
-        <nav>
-            <img src="assets/blackwhitelogo.png" width="104px" alt="Logo" />
+        <nav role="navigation" aria-label="Main menu">
+            <img src="assets/blackwhitelogo.png" alt="Logo" />
             <img src="assets/whitehamburger.svg" alt="Menu icon" />
             <ul>
-                <li><a href="#">Plan your visit</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">Stories</a></li>
+                <li>
+                    <button aria-expanded="false">Plan your visit</button>
+                    <ul class="innerList">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li><button>Collection</button>
+                    <ul class="innerList">
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                    </ul>
+                </li>
+                <li><button>Stories</button>
+                    <ul class="innerList">
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                        <li><a href="#">Option 9</a></li>
+                    </ul>
+                </li>
                 <li><a href="#" class="ticketBtn">Tickets</a></li>
             </ul>
         </nav>
@@ -64,7 +83,7 @@
                 <a href="#">
                     <img src="assets/reversearrow.svg" alt="knop om verder te gaan" /></a>
             </div>
-            
+
         </section>
         <section class="tentoonstelling-info">
             <h2>Tentoonstellingen</h2>
@@ -109,7 +128,8 @@
             <div>
                 <img src="assets/Geheimen_van_de_natuur1.webp" alt="foto van de tentoonstelling: gewetensvrijheid" />
                 <h3>De geheimen van de natuur</h3>
-                <p>Reis mee naar een tijd waarin de wereld nog vol verborgen geheimen zat die de mens voor allerlei onopgeloste raadsels stelden.</p>
+                <p>Reis mee naar een tijd waarin de wereld nog vol verborgen geheimen zat die de mens voor allerlei
+                    onopgeloste raadsels stelden.</p>
                 <p>9 juni - 12 september 2021</p>
                 <a href="#"><img src="assets/arrow.svg" alt="knop om naar tentoonstelling te gaan." /></a>
             </div>
