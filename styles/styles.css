@@ -595,6 +595,11 @@ a.ctaLink {
     border-radius: 70px;
     background-color: var(--primary-color);
     filter: drop-shadow(0px 0px 5px var(--primary-color));
+    opacity: 0;
+
+    animation: appear linear both;
+    animation-timeline: scroll();
+    animation-range: 0vh 30vh;
 
     @media (any-pointer: fine) {
         &:hover {
@@ -610,6 +615,11 @@ a.ctaLink {
         margin: 0.5rem;
         border-radius: 2rem;
         z-index: 10;
+    }
+}
+@keyframes appear {
+    to {
+        opacity: 1;
     }
 }
 
