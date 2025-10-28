@@ -595,6 +595,13 @@ a.ctaLink {
     border-radius: 70px;
     background-color: var(--primary-color);
     filter: drop-shadow(0px 0px 5px var(--primary-color));
+
+    @media (any-pointer: fine) {
+        &:hover {
+            scale: 1.02;
+            font-size: 1.02rem;
+        }
+    }
 }
 
 @keyframes bg-fill {
