@@ -95,6 +95,7 @@ header {
                 list-style: none;
                 position: relative;
                 display: flex;
+                align-items: center;
 
                 .ticketBtn {
                     padding: 1rem 2rem;
