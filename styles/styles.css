@@ -64,6 +64,11 @@ header {
         justify-content: space-between;
         padding: 0.5rem;
 
+        color: white;
+                    font-size: 1rem;
+                    background: none;
+                    border: none;
+
         img:first-of-type {
             width: 104px;
         }
@@ -113,12 +118,7 @@ header {
                     font-weight: bold;
                 }
 
-                button {
-                    color: white;
-                    font-size: 1rem;
-                    background: none;
-                    border: none;
-                }
+            
 
                 .innerList {
                     display: none;
@@ -382,7 +382,7 @@ section.tentoonstelling-info {
     }
 }
 
-section.tentoonstellingen {
+div.tentoonstellingen {
 
     display: grid;
     grid-auto-flow: column;
@@ -407,7 +407,7 @@ section.tentoonstellingen {
         scrollbar-width: none;
     }
 
-    >div {
+    > article {
 
         grid-column: span 2;
         scroll-snap-align: start;
