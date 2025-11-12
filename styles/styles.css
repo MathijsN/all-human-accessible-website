@@ -120,7 +120,6 @@ header {
                 }
 
 
-
                 .innerList {
                     display: none;
                 }
@@ -768,7 +767,7 @@ a.ctaLink {
 
 @keyframes appear {
     to {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
